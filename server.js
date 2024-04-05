@@ -10,7 +10,7 @@ const jwt = require('jsonwebtoken');
 const userService = require("./user-service.js");
 
 dotenv.config();
-
+console.log(process.env.MONGO_URL)
 const HTTP_PORT = process.env.PORT || 8080;
 
 app.use(express.json());
